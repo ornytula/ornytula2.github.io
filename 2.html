@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Thumbnail to Full Width Image Animation | Codrops</title>
+		<meta name="description" content="An experimental thumbnail to full width and article animation" />
+		<meta name="keywords" content="javascript, gsap, animation, thumbnail, article, layout, css grid" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/lne5uqk.css">
+		<link rel="stylesheet" type="text/css" href="css/2.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+                  <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="../favicon.ico"> 
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+   
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	
+
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+
+
+	</head>
+	<body class="loading">
+		<main data-scroll-container>
+		<section id="menu">
+		
+	<nav >
+		<ul >
+			                  <li><a  href="index.html">Главная</a></li>
+					
+					<li ><a href="orchestra.html" >Оркестр</a></li>
+					
+					<li ><a  href="anonsy.html">Анонсы</a></li>
+					
+					<li ><a  href="media.html">Медиа</a></li>
+
+					<li ><a  href="fest.html">Фестивали</a></li>
+
+					<li ><a  href="contact.html">Контакты</a></li>
+	
+		</ul>
+		<a href="#" id="pull">Меню</a>
+	</nav>
+</section>
+			<section class="content">
+				<div class="inner">
+					<header class="content__header">
+						<div class="content__meta">
+							
+							
+						</div>
+						<h2 data-scroll data-scroll-speed="2" data-scroll-delay="0.1" data-scroll-position="top" class="content__title anim-block-wrap">
+							<span class="anim-block"><b>Аленичев</b> Владимир Витальевич</span>
+						</h2>
+						<p data-scroll data-scroll-speed="1" data-scroll-delay="0.1" data-scroll-position="top" class="content__subtitle anim-block-wrap">
+							<span class="anim-block">Художественный руководитель и главный дирижёр</span>
+						</p>
+						<div class="content__intro content__breakout">
+							<div class="content__intro-imgWrap">
+								<img data-scroll data-scroll-speed="1" data-scroll-delay="0.1" data-scroll-position="top" class="content__intro-img" src="images/portfolio/2.jpg" alt="Some image" />
+							</div>
+						</div>
+					</header>
+					<div class="content__body">
+						<p class="content__body-para text-right cell--1-2">						<p><strong></strong> Родился 31 августа 1970 года, Тула</p>
+											<p><strong></strong> Преподаватель, дирижёр, победитель всероссийских конкурсов и фестивалей.
+
+В 1985 году окончил Детскую музыкальную школу № 2 города Тулы (в настоящее время Детская школа искусств имени Г.Г. Галынина) (класс балалайки – Шелепина Елена Владимировна); в 1989 году – Тульское музыкальное училище (в настоящее время – Тульский колледж искусств) имени А.С. Даргомыжского (класс балалайки – Косов Сергей Викторович); в 1996 г. – Рязанский филиал Московского государственного университета культуры (класс дирижирования – Е.П. Семизарова).
+
+В 1988 году начал свою педагогическую деятельность в Детской музыкальной школе № 2 города Тулы.
+</p></p></div>
+						<p data-scroll data-scroll-offset="130" class="content__body-para cell--3 anim-show"><strong>The Crown that the Deathless pray for</strong></p>
+						<div class="content__body-imgwrap cell--1-3">
+							<div data-scroll data-scroll-speed="0.7" data-scroll-delay="0.1" class="content__body-image" style="background-image:url(images/blog/11.jpg)"></div>
+						</div>
+						<p class="content__body-para cell--2-3">Now in the Space of the Indivisible Atom are twelve Founts, above which are the twelve Paternities who surround the Indivisible [Queen] like Deeps or like Skies and make for Her a crown in which is every kind of life: all modes of Triple-powered life, of Uncontainable life, of Infinite life, of Ineffable life, of Silent life, of Unknown life, of Solitary life, of Unshakable life, of First-manifested life, of Self-born life, of True life. All is therein. Every species is in it, all Gnôses and every power which has received the Light, yea, all Mind manifests itself therein. This is the Crown which the Father of the Universe has placed upon the Indivisible [Queen] with three hundred and sixty-five kinds in it, brilliant and filling the Universe with an incorruptible and unfailing light.</p>
+					</div>
+					<footer class="content__footer content__breakout">
+						<div class="inner inner--grid">
+							<a class="content__footer-copyright"  href="https://www.twitter.com/codrops">© Codrops 2020</a>
+							<a data-scroll class="content__footer-next anim-show">Next Project</a>
+						</div>
+					</footer>
+				</div>
+			</section>
+			
+		</main>
+		<svg class="cursor" width="30" height="30" viewBox="0 0 30 30">
+			<circle class="cursor__inner" cx="15" cy="15" r="7.5"/>
+		</svg>
+		
+	</body>
+</html>

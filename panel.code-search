@@ -1,0 +1,195 @@
+# Query: panel
+# ContextLines: 1
+
+53 results - 3 files
+
+index.html:
+   72    <p class='subhead'></p>
+   73:   <div class='panel'>
+   74      <h2 class='dark' data-splitting='words'>История</h2>
+
+   81    </div>
+   82:   <div class='panel'>
+   83      <h2 data-splitting='words'>Наш дирижёр</h2>
+
+   90    </div>
+   91:   <div class='panel'>
+   92      <h2 data-splitting='words'>Руководство и солисты</h2>
+
+   99    </div>
+  100:   <div class='panel'>
+  101      <h2 data-splitting>Артисты оркестра</h2>
+
+style.css:
+   729  }
+   730: body.loaded #wrap .panel {
+   731    opacity: 1;
+
+   733  }
+   734: body.loaded #wrap .panel:before {
+   735    opacity: 0.15;
+
+   765  }
+   766: body.active #wrap .panel h2 span.word:before {
+   767    transform: translate(-50%, 100px);
+
+  1308  }
+  1309: body #wrap .panel {
+  1310    --progress: 0;
+
+  1328  }
+  1329: body #wrap .panel:nth-of-type(even) .thumb:after {
+  1330    transform: scaleX(-1);
+
+  1332  }
+  1333: body #wrap .panel:last-of-type {
+  1334    margin-bottom: 0;
+  1335  }
+  1336: body #wrap .panel:last-of-type .thumb:after {
+  1337    display: none;
+  1338  }
+  1339: body #wrap .panel:last-of-type:nth-of-type(even):before {
+  1340    right: -5%;
+  1341  }
+  1342: body #wrap .panel:nth-of-type(1):before {
+  1343    content: "1";
+  1344  }
+  1345: body #wrap .panel:nth-of-type(even):before {
+  1346    left: auto;
+
+  1348    justify-content: flex-end;
+  1349: }body #wrap .panel:nth-of-type(even):before {
+  1350    left: auto;
+
+  1353  }
+  1354: body #wrap .panel:before {
+  1355    font-family: "Bogart-Semibold";
+
+  1370  }
+  1371: body #wrap .panel h2 {
+  1372    grid-area: 3/1/4/4;
+
+  1381  }
+  1382: body #wrap .panel h2 span.word {
+  1383    position: relative;
+
+  1393  @media (max-width: 1000px) {
+  1394:   body #wrap .panel h2 span.word {
+  1395      padding: 40px 0px;
+
+  1419  }
+  1420: body #wrap .panel h2 span.word:before {
+  1421    content: attr(data-word);
+
+  1436  }
+  1437: body #wrap .panel h2 span.word:nth-of-type(3n):before {
+  1438    background-position: 50% calc((var(--progress) * -200px) + 25px);
+
+  1440  @media (min-width: 1000px) {
+  1441:   body #wrap .panel h2 {
+  1442      grid-area: 3/1/4/5;
+
+  1444    }
+  1445:   body #wrap .panel h2:nth-of-type(2) {
+  1446      z-index: 2;
+  1447    }
+  1448:   body #wrap .panel h2:nth-of-type(2) span.word {
+  1449      color: gold;
+  1450    }
+  1451:   body #wrap .panel h2:nth-of-type(2) span.word:before, body #wrap .panel h2:nth-of-type(2) span.word:after {
+  1452   color: gold;  }
+  1453  }
+  1454: body #wrap .panel:nth-of-type(even) .thumb:before {
+  1455    left: -5%;
+
+  1457  }
+  1458: body #wrap .panel:nth-of-type(even) .thumb:hover:before {
+  1459    transform: translate(5%, 5%);
+  1460  }
+  1461: body #wrap .panel:nth-of-type(even) h2 {
+  1462    text-align: right;
+
+  1465  @media (max-width: 768px) {
+  1466:   body #wrap .panel:nth-of-type(even) h2 {
+  1467      grid-area: 2/1/5/6;
+
+  1470  @media (min-width: 1000px) {
+  1471:   body #wrap .panel:nth-of-type(even) h2 {
+  1472      grid-area: 3/2/4/6;
+
+  1475    }
+  1476:   body #wrap .panel:nth-of-type(even) h2:nth-of-type(2) {
+  1477      z-index: 4;
+
+  1480    }
+  1481:   body #wrap .panel:nth-of-type(even) h2:nth-of-type(2) span.word {
+  1482      color: transparent;
+  1483    }
+  1484:   body #wrap .panel:nth-of-type(even) h2:nth-of-type(2) span.word:before, body #wrap .panel:nth-of-type(even) h2:nth-of-type(2) span.word:after {
+  1485      color: transparent;
+
+  1487  }
+  1488: body #wrap .panel:nth-of-type(even) .thumb {
+  1489    grid-area: 2/1/5/4;
+
+  1491  @media (max-width: 768px) {
+  1492:   body #wrap .panel:nth-of-type(even) .thumb {
+  1493      grid-area: 2/1/5/6;
+
+  1495  }
+  1496: body #wrap .panel:nth-of-type(even) .thumb p {
+  1497    top: -50px;
+  1498  }
+  1499: body #wrap .panel .thumb {
+  1500    grid-area: 2/3/5/6;
+
+  1506  @media (max-width: 768px) {
+  1507:   body #wrap .panel .thumb {
+  1508      grid-area: 2/1/5/6;
+
+  1510  }
+  1511: body #wrap .panel .thumb p {
+  1512    position: absolute;
+
+  1520  }
+  1521: body #wrap .panel .thumb * {
+  1522    border-radius: 5px;
+  1523  }
+  1524: body #wrap .panel .thumb .inner {
+  1525    position: absolute;
+
+  1532  }
+  1533: body #wrap .panel .thumb .inner:before, body #wrap .panel .thumb .inner:after {
+  1534    content: "";
+
+  1544  }
+  1545: body #wrap .panel .thumb .inner:after {
+  1546    background: #eeece5;
+
+  1550  }
+  1551: body #wrap .panel .thumb:hover:before {
+  1552    transform: translate(-5%, -5%);
+
+  1555  }
+  1556: body #wrap .panel .thumb:before {
+  1557    content: "";
+
+  1567  }
+  1568: body #wrap .panel .thumb:after {
+  1569    content: "";
+
+  1580  }
+  1581: body #wrap .panel .thumb img {
+  1582    mix-blend-mode: exclusion;
+
+  1592  }
+  1593: body #wrap .panel .thumb img.invert {
+  1594    filter: invert(1) saturate(0) blur(calc(50px - (var(--progress) * 125px))) brightness(0.5) contrast(4);
+  1595  }
+  1596: body #wrap .panel .thumb img.shift {
+  1597    left: 0;
+
+js\orchestra.js:
+  106  
+  107: gsap.utils.toArray(".panel").forEach((section, index) => {
+  108    gsap.to(this, {
